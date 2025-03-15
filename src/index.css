@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* write your css here */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
   min-height: 100vh;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Container Styles */
 .container {
   display: flex;
   align-items: center;
@@ -19,6 +21,7 @@ body {
   flex-direction: column;
 }
 
+/* Title Styles */
 .title {
   font-size: 3rem;
   margin: 6vh;
@@ -27,6 +30,7 @@ body {
   padding: 1vh 5vw;
 }
 
+/* Cards Container */
 .cards {
   display: flex;
   justify-content: center;
@@ -35,6 +39,7 @@ body {
   margin: 0 auto;
 }
 
+/* Individual Card Styles */
 .card {
   width: 400px;
   height: max-content;
@@ -46,12 +51,15 @@ body {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+/* Image Styles */
 .image {
   width: 380px;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
+/* Tour Info Styles */
 .tour-info {
   margin: 20px 5px;
 }
@@ -69,6 +77,8 @@ body {
   color: #12b0e8;
   cursor: pointer;
 }
+
+/* Refresh Section */
 .refresh {
   height: 100vh;
   display: flex;
@@ -76,6 +86,8 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+/* Button Styles */
 .btn-red {
   margin-top: 18px;
   padding: 10px 18px;
@@ -104,4 +116,42 @@ body {
   background-color: white;
   color: black;
   transition: all 0.2s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    padding: 1vh 3vw; /* Adjust padding */
+    margin: 4vh; /* Reduce margin */
+  }
+
+  .card {
+    width: 90%; /* Make cards take up more width on smaller screens */
+    margin: 1rem auto; /* Center cards */
+  }
+
+  .image {
+    width: 100%; /* Make images responsive */
+  }
+
+  .btn-white {
+    padding: 10px 40px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+    padding: 1vh 2vw; /* Adjust padding */
+    margin: 2vh; /* Reduce margin */
+  }
+
+  .card {
+    width: 95%; /* Make cards almost full width */
+  }
+
+  .btn-white {
+    padding: 10px 20px; /* Further adjust button padding */
+  }
 }
