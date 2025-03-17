@@ -121,37 +121,37 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem; /* Reduce font size for smaller screens */
-    padding: 1vh 3vw; /* Adjust padding */
-    margin: 4vh; /* Reduce margin */
+    font-size: 2rem; 
+    padding: 1vh 3vw; 
+    margin: 4vh; 
   }
 
   .card {
-    width: 90%; /* Make cards take up more width on smaller screens */
-    margin: 1rem auto; /* Center cards */
+    width: 90%; 
+    margin: 1rem auto; 
   }
 
   .image {
-    width: 100%; /* Make images responsive */
+    width: 100%; 
   }
 
   .btn-white {
-    padding: 10px 40px; /* Adjust button padding */
+    padding: 10px 40px; 
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem; /* Further reduce font size for very small screens */
-    padding: 1vh 2vw; /* Adjust padding */
-    margin: 2vh; /* Reduce margin */
+    font-size: 1.5rem; 
+    padding: 1vh 2vw; 
+    margin: 2vh; 
   }
 
   .card {
-    width: 95%; /* Make cards almost full width */
+    width: 95%; 
   }
 
   .btn-white {
-    padding: 10px 20px; /* Further adjust button padding */
+    padding: 10px 20px; 
   }
 }

@@ -5,7 +5,8 @@ function Card({ image, id, info, name, price, tourDel }) {
   const description = info.substring(0, 200) + "...";
 
   function handleReadMore() {
-    setReadMore(!readmore);
+    // setReadMore(!readmore);
+    setReadMore((prev) => !prev);
   }
   return (
     <div className="card">
