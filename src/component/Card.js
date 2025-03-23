@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function Card({ image, id, info, name, price, tourDel }) {
-  const [readmore, setReadMore] = useState();
-  const description = info.substring(0, 200) + "...";
+  const [readmore, setReadMore] = useState(false);
+  const truncated = info.substring(0, 200) + "...";
 
   function handleReadMore() {
     // setReadMore(!readmore);
@@ -19,9 +19,9 @@ function Card({ image, id, info, name, price, tourDel }) {
           </div>
 
           <div className="tour-details">
-            {readmore ? info : description}
+            {readmore ? truncated : info}
             <span className="read-more" onClick={handleReadMore}>
-              {readmore ? "show less" : "read more"}
+              {readmore ? "read more" : "show less"}
             </span>
           </div>
         </div>
